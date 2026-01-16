@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NEINA - Artisan sourdough bakery in Nara, Japan. Enjoy freshly baked sourdough sandwiches, coffee, and homemade sweets.">
+    <title>NEINA | Artisan Sourdough Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.png" alt="NEINA Logo">
+            </a>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navToggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active"
+                style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/0.jpg');">
+            </div>
+            <div class="hero-slide"
+                style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero-bg-2.png');">
+            </div>
+            <div class="hero-slide"
+                style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero-bg-3.png');">
+            </div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Artisan Bakery in Nara</p>
+            <h1>Welcome to NEINA</h1>
+            <p class="hero-description">
+                Experience the art of sourdough craftsmanship. Our freshly baked bread and
+                handcrafted sandwiches are made with love, tradition, and the finest ingredients.
+            </p>
+            <a href="menu.html" class="btn btn-primary">View Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-divider">
+                    <span></span>
+                    <div class="section-divider-icon">🌾</div>
+                    <span></span>
+                </div>
+                <h2>About</h2>
+                <p>Where tradition meets passion in every bite</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Crafted with Care</h3>
+                    <p>
+                        At NEINA, we believe that great bread starts with time, patience, and quality ingredients.
+                        Our sourdough is naturally fermented using a centuries-old technique, creating a unique
+                        flavor and texture that you won't find anywhere else.
+                    </p>
+                    <p>
+                        Located in the heart of Nara, we invite you to slow down, savor the moment, and enjoy
+                        the simple pleasures of artisan bread and thoughtfully prepared food.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🥖</div>
+                            <h4>Fresh Daily</h4>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🌿</div>
+                            <h4>Natural Ingredients</h4>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">❤️</div>
+                            <h4>Made with Love</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="images/about-placeholder.jpg" alt="NEINA Bakery Interior"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'background: var(--cream-dark); height: 400px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 4rem;\'>🏠</div>'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section featured">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-divider">
+                    <span></span>
+                    <div class="section-divider-icon">✨</div>
+                    <span></span>
+                </div>
+                <h2>Featured Items</h2>
+                <p>Discover our most loved creations</p>
+            </div>
+
+            <div class="featured-grid">
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <div class="product-card-placeholder">🥪</div>
+                    </div>
+                    <div class="product-card-content">
+                        <h4>Pastrami Sandwich</h4>
+                        <p>Our signature sourdough topped with premium pastrami and fresh vegetables</p>
+
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <div class="product-card-placeholder">☕</div>
+                    </div>
+                    <div class="product-card-content">
+                        <h4>Artisan Coffee</h4>
+                        <p>Carefully selected beans, expertly brewed to perfection</p>
+
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <div class="product-card-placeholder">🍫</div>
+                    </div>
+                    <div class="product-card-content">
+                        <h4>Chocolate Walnut Brownies</h4>
+                        <p>Sourdough-based brownies with rich chocolate and crunchy walnuts</p>
+
+                    </div>
+                </div>
+
+                <div class="product-card"
+                    style="display: flex; align-items: center; justify-content: center; background: var(--cream-warm);">
+                    <div class="product-card-content" style="text-align: center;">
+                        <h4>Check More Menu</h4>
+                        <p>Explore our full selection of bread, sandwiches, drinks, and sweets</p>
+                        <a href="menu.html" class="btn btn-primary" style="margin-top: 1rem;">View Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-divider">
+                    <span style="background: var(--gold-accent);"></span>
+                    <div class="section-divider-icon">📍</div>
+                    <span style="background: var(--gold-accent);"></span>
+                </div>
+                <h2>Visit Us</h2>
+                <p>We'd love to welcome you to NEINA</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>J-Room, Yume Cube<br>12 Mochiidono St., Nara City<br>NARA JAPAN 630-8222</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>8:30 AM - 4:00 PM<br>Open Daily</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🍽️</div>
+                        <div>
+                            <h4>Dining Options</h4>
+                            <p>Dine-in & To-Go available<br>No delivery service</p>
+                        </div>
+                    </div>
+
+                    <p style="font-size: 0.875rem; color: var(--brown-light); margin-top: 1.5rem; font-style: italic;">*
+                        Prices may vary. Please ask in-store for current pricing.</p>
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.511917164766!2d135.82909621696652!3d34.6803279167438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001392b68490d33%3A0xc948d0c509848f03!2zU291cmRvdWdoIENhZmUgTkVJTkEg5a-d5aWI!5e0!3m2!1sen!2sjp!4v1767413023609!5m2!1sen!2sjp"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 NEINA Bakery. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.navbar-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+
+        // Hero Slider
+        const slides = document.querySelectorAll('.hero-slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

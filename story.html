@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Our Story - Learn about NEINA's history, our artisan sourdough process, and our home in Nara, Japan.">
+    <title>Our Story | NEINA Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+        .story-section {
+            padding: 4rem 0;
+        }
+
+        .story-block {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .story-block:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .story-text {
+            flex: 1;
+        }
+
+        .story-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--brown-dark);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .story-text p {
+            line-height: 1.8;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .story-image {
+            flex: 1;
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .story-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .story-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .story-placeholder {
+            width: 100%;
+            height: 100%;
+            background: var(--cream-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--brown-light);
+        }
+
+        @media (max-width: 768px) {
+
+            .story-block,
+            .story-block:nth-child(even) {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .story-image {
+                height: 300px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.png" alt="NEINA Logo">
+            </a>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="story.html" class="active">Story</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navToggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/story-header-bg.jpg'); background-size: cover; background-position: center; padding: 6rem 0;">
+        <div class="container">
+            <div class="section-divider">
+                <span style="background: var(--gold-accent);"></span>
+                <div class="section-divider-icon">🌾</div>
+                <span style="background: var(--gold-accent);"></span>
+            </div>
+            <h1 style="color: white;">Our Story</h1>
+            <p style="color: rgba(255,255,255,0.9);">A journey of passion, tradition, and the spirit of Nara</p>
+        </div>
+    </section>
+
+    <!-- Story Content -->
+    <section class="story-section">
+        <div class="container">
+
+            <!-- The Shop -->
+            <div class="story-block">
+                <div class="story-text">
+                    <h2>The Shop</h2>
+                    <p>
+                        NEINA was born from a simple desire: to bring the authentic taste of artisan sourdough to Nara.
+                        Located in the historic "Yume Cube" complex, our cozy bakery is a place where locals and
+                        visitors alike can slow down and enjoy the simple pleasures of life.
+                    </p>
+                    <p>
+                        The name NEINA represents our commitment to natural, wholesome ingredients. We designed our
+                        space to be warm and inviting—a small haven where the aroma of freshly baked bread greets you at
+                        the door.
+                    </p>
+                </div>
+                <div class="story-image">
+                    <img src="images/shop-interior.jpg" alt="Inside NEINA Bakery"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="story-placeholder" style="display:none;">🏠</div>
+                </div>
+            </div>
+
+            <!-- Nara -->
+            <div class="story-block">
+                <div class="story-text">
+                    <h2>Nara</h2>
+                    <p>
+                        We are proud to call Nara our home. With its ancient temples, friendly deer, and serene
+                        atmosphere, this city has a unique rhythm that inspires our baking.
+                    </p>
+                    <p>
+                        Our bakery is situated on Mochiidono Street, one of the oldest shopping streets in Nara. Being
+                        part of this community means everything to us. We strive to honor the local culture by creating
+                        a gathering place that feels both modern and timeless, much like Nara itself.
+                    </p>
+                </div>
+                <div class="story-image">
+                    <img src="images/nara-street.jpg" alt="Streets of Nara"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="story-placeholder" style="display:none;">⛩️</div>
+                </div>
+            </div>
+
+            <!-- Sourdough -->
+            <div class="story-block">
+                <div class="story-text">
+                    <h2>Sourdough — Bread Made with Time and Life</h2>
+                    <p>
+                        Our sourdough is made with natural yeast, slowly fermented over time to bring out its deep
+                        flavor and gentle acidity. This traditional process creates bread that is easier to digest, rich
+                        in aroma, and full of character.
+                    </p>
+                    <p>
+                        Each loaf carries the quiet rhythm of patience and care.
+                    </p>
+                    <p style="margin-top: 2rem; font-size: 1.1rem; color: var(--brown-warm);">
+                        <strong>サワドウ — 時間といのちで育つパン</strong>
+                    </p>
+                    <p style="line-height: 2;">
+                        私たちのサワドウは、天然酵母を使い、ゆっくりと時間をかけて発酵させています。その伝統的な製法が、やさしい酸味と深い風味、そして消化にやさしい食感を生み出します。
+                    </p>
+                    <p>
+                        一つひとつのパンには、手間と時間のリズムが息づいています。
+                    </p>
+                </div>
+                <div class="story-image">
+                    <img src="images/sourdough-process.jpg" alt="Making Sourdough"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="story-placeholder" style="display:none;">🥖</div>
+                </div>
+            </div>
+
+            <!-- Grains from Hokkaido -->
+            <div class="story-block">
+                <div class="story-text">
+                    <h2>Grains from Hokkaido — the Taste of the Land</h2>
+                    <p>
+                        Our bread is made with wheat grown in the rich soil and cool climate of Hokkaido. Rye adds depth
+                        and a gentle tang, while ancient spelt brings a light, nutty aroma.
+                    </p>
+                    <p>
+                        Each grain carries the flavor of the northern fields — simple, honest, and full of life.
+                    </p>
+                    <p style="margin-top: 2rem; font-size: 1.1rem; color: var(--brown-warm);">
+                        <strong>北海道の穀物 — 大地の味わい</strong>
+                    </p>
+                    <p style="line-height: 2;">
+                        私たちのパンは、北海道の豊かな土壌と涼しい気候で育った小麦から作られています。ライ麦は深みとほのかな酸味を、スペルト小麦は軽やかな香ばしさを与えてくれます。
+                    </p>
+                    <p>
+                        北の大地で育まれた穀物の味わいを、素朴に、まっすぐにお届けします。
+                    </p>
+                </div>
+                <div class="story-image">
+                    <img src="images/hokkaido-wheat.jpg" alt="Hokkaido Wheat Fields"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="story-placeholder" style="display:none;">🌾</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Visit CTA -->
+    <section class="section" style="background: var(--cream-warm); text-align: center;">
+        <div class="container">
+            <h3>Come Say Hello</h3>
+            <p style="margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                We'd love to share our bread and our story with you in person.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary">Find Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 NEINA Bakery. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.navbar-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

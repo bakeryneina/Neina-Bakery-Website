@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NEINA Menu - Explore our sourdough sandwiches, drinks, and homemade sweets in Nara, Japan.">
+    <title>Menu | NEINA Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/logo.png" alt="NEINA Logo">
+            </a>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navToggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/menu-header-bg.jpg'); background-size: cover; background-position: center; padding: 6rem 0;">
+        <div class="container">
+            <div class="section-divider">
+                <span style="background: var(--gold-accent);"></span>
+                <div class="section-divider-icon">📜</div>
+                <span style="background: var(--gold-accent);"></span>
+            </div>
+            <h1 style="color: white;">Our Menu</h1>
+            <p style="color: rgba(255,255,255,0.9);">Fresh, handcrafted with love every day</p>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <section class="menu-section">
+        <div class="container">
+
+            <!-- Bread -->
+            <div class="menu-category">
+                <div class="menu-category-header">
+                    <span class="menu-category-icon">🍞</span>
+                    <h2>Bread</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Sourdough</h4>
+                            <p>Our signature naturally fermented sourdough loaf</p>
+                        </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Focaccia</h4>
+                            <p>Italian-style flatbread with herbs</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sandwiches -->
+            <div class="menu-category">
+                <div class="menu-category-header">
+                    <span class="menu-category-icon">🥪</span>
+                    <h2>Sourdough Sandwiches</h2>
+                </div>
+
+                <!-- Special -->
+                <h3 style="color: var(--brown-warm); font-size: 1.25rem; margin: 1.5rem 0 1rem;">Special</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Grilled Chicken Breast</h4>
+                            <p>Tender grilled chicken on sourdough</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Tuna</h4>
+                            <p>Fresh tuna salad on sourdough</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular -->
+                <h3 style="color: var(--brown-warm); font-size: 1.25rem; margin: 2rem 0 1rem;">Regular</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Ham</h4>
+                            <p>Classic ham on fresh sourdough</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Hummus</h4>
+                            <p>Creamy hummus with fresh vegetables</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Ricotta</h4>
+                            <p>Fresh ricotta with seasonal toppings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-category">
+                <div class="menu-category-header">
+                    <span class="menu-category-icon">☕</span>
+                    <h2>Drinks</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Coffee</h4>
+                            <p>Freshly brewed artisan coffee</p>
+                        </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Hot Chocolate</h4>
+                            <p>Rich and creamy hot chocolate</p>
+                        </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Craft Beer</h4>
+                            <p>Local craft beer selection</p>
+                        </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Rooibos</h4>
+                            <p>Caffeine-free rooibos tea</p>
+                        </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Lemonade</h4>
+                            <p>Fresh homemade lemonade</p>
+                        </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Craft Cola</h4>
+                            <p>Artisan craft cola</p>
+                        </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Pellegrino</h4>
+                            <p>Sparkling mineral water</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sweets -->
+            <div class="menu-category">
+                <div class="menu-category-header">
+                    <span class="menu-category-icon">🍫</span>
+                    <h2>Sweets</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Sourdough Chocolate Walnut Brownies</h4>
+                            <p>Rich brownies made with sourdough, chocolate, and walnuts</p>
+                        </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Banana Muffins</h4>
+                            <p>Freshly baked banana muffins</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <p style="font-size: 0.875rem; color: var(--brown-light); margin-top: 2rem; font-style: italic;">* Prices
+                may vary. Please ask in-store for current pricing.</p>
+
+        </div>
+    </section>
+
+    <!-- Visit CTA -->
+    <section class="section" style="background: var(--cream-warm); text-align: center;">
+        <div class="container">
+            <h3>Ready to taste the difference?</h3>
+            <p style="margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                Visit us at NEINA and experience the art of sourdough.
+                We're open daily from 8:30 AM to 4:00 PM.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary">Find Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 NEINA Bakery. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.navbar-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
